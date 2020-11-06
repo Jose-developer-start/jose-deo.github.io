@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*
+**Colours
+*/
+nav{
+    height: 50px;
+    background: #0f4956;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+#logo__menu{
+    padding: 4px 15px;
+    color: #f1f1f1;
+}
+#menu__responsive{
+    float:right;
+    padding: 5px 15px;
+    z-index: 0;
+    cursor:pointer;
+}
+.link{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    background-color: #0f4956;
+    border-top: 1px solid #f1f1f1;
+    
+    display: none;
+    z-index: 1;
+}
+.link__item:link{
+    text-decoration:none;
+}
+.link__item{
+    display: flex;
+    padding: 10px 15px;
+    color: aqua;
+}
+.link__item:hover{
+    color: #a7c4cb;
+    font-weight:700;
+    background: #0b332e;
+}
+/*Styles of photo*/
+.photo{
+    background-image: url(../img/woman.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    position: relative;
+}
+.photo:before{
+    content: "";
+    width: 100%;
+    height: 70vh;
+    background-color: #00a1dd;
+    position: absolute;
+    opacity: .5;
+}
+.information{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    position: relative;
+    color: #ffffff;
+}
+.information h1{
+    font-weight:600;
+}
+.information h2{
+    font-weight: 600;
+}
+/*Styles Skills*/
+.skills__content{
+    background-color: #006d95;
+    color: #fff;
+    border-radius: 5px;
+}
+.skills__title{
+    font-size: 12px;
+}
+/*MEDIA QUERIES*/
+@media (min-width:760px){
+    nav{
+        height: 55px;
+        
+    }
+    #menu__responsive{
+        display: none;
+    }
+    .link{
+        position: relative;
+        top:0;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+    /*Styles Skills*/
+    .skills__title{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .skills__info{
+        font-size: 18px;
+    }
+}
+@media (min-width:1024px){
+    nav{
+        height: 55px;
+        
+    }
+    #logo__menu{
+        margin-left: 50px;
+    }
+    .link{
+        margin-right: 50px
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
