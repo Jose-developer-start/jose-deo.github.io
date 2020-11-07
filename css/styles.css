@@ -10,20 +10,19 @@ nav{
     height: 50px;
     background: #0f4956;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: #fff;
     
     position: fixed;
     z-index: 1;
     width: 100%;
 }
-#logo__menu{
-    padding: 4px 15px;
-    color: #f1f1f1;
+.nav-logo{
+    width: 95%;
+    padding-top: 4px;
 }
-#menu__responsive{
+.menu{
     float:right;
-    padding: 5px 15px;
     z-index: 0;
     cursor:pointer;
 }
@@ -84,6 +83,9 @@ nav{
     font-weight: 600;
 }
 /*Styles Skills*/
+.skills{
+    margin-top: 60px;
+}
 .skills__content{
     background-color: #006d95;
     color: #fff;
@@ -92,13 +94,26 @@ nav{
 .skills__title{
     font-size: 12px;
 }
+/*
+****Styles redes
+*/
+.redes{
+    font-size: 25px;
+}
+.redes__icon{
+    font-size: 5555555px;
+}
 /*MEDIA QUERIES*/
-@media (min-width:760px){
-    nav{
-        height: 55px;
-        
+@media (min-width:600px){
+    .nav-logo{
+        width: 85%;
     }
-    #menu__responsive{
+}
+@media (min-width:760px){
+    .nav-logo{
+        padding-left: 60px
+    }
+    #menu{
         display: none;
     }
     .link{
@@ -107,7 +122,7 @@ nav{
         top:0;
         display: flex;
         justify-content: flex-end;
-        margin-right: 15px;
+        margin-right: 60px;
         font-size: 18px;
     }
     /*Styles Skills*/
@@ -118,17 +133,21 @@ nav{
     .skills__info{
         font-size: 18px;
     }
+    /*Styles redes*/
+    .redes a{
+        margin: 20px 
+    }
 }
 @media (min-width:1024px){
     nav{
         height: 55px;
         
     }
-    #logo__menu{
-        margin-left: 50px;
+    .nav-logo{
+        padding-left: 70px
     }
     .link{
-        margin-right: 50px
+        margin-right: 70px;
     }
     
 }

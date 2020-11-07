@@ -15,8 +15,10 @@
     </head>
     <body>
         <nav>
-            <a id="logo__menu" href="#"><img src="img/linux-logo.png" alt=""></a>
-            <i id="menu__responsive" class='bx bx-menu bx-md menu'></i>
+            <div class="nav-logo">
+                <a href="#"><img src="img/linux-logo.png" alt=""></a>
+                <i id="menu" class='bx bx-menu bx-md menu' aria-hidden="true"></i>
+            </div>
             <div class="link">
                 <a class="link__item" href="">HOME</a>
                 <a class="link__item" href="#skills">SKILLS</a>
@@ -33,7 +35,7 @@
         </section>
         <section class="bg-light">
             <article id="skills" class="container skills">
-               <h2 class="text-center pt-3 ">SKILLS</h2>
+                <h2 class="text-center pt-3 ">SKILLS</h2>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 mt-4">
                         <div class="skills__content p-3 shadow-lg">
@@ -56,8 +58,8 @@
 
                                 </div>
                                 <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                                    <p class="skills__info">PHP-PYTHON
-                                -MARIADB</p>
+                                    <p class="skills__info">PHP-Python
+                                        -MariaDB</p>
                                 </div>
                             </div>
                         </div>
@@ -67,24 +69,33 @@
         </section>
         <section class="bg-light">
             <article id="experience" class="container">
-               <h2 class="text-center pt-4">EXPERIENCE</h2>
+                <h2 class="text-center pt-4">EXPERIENCE</h2>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4 mt-4">
-                        <h3>Frontend Developer</h3>
-                        <p>Desarrollo de sitios web, implementando tecnologias como JS para validaciones de formularios, ademas, un poco de JQuery</p>
+                        <h3 class="text-center">Frontend Developer</h3>
+                        <p class="text-center">Desarrollo de sitios web, implementando tecnologias como JS para validaciones de formularios, ademas, un poco de JQuery</p>
                     </div>
                     <div class="col-12 col-sm-12 col-md-4 mt-4">
-                        <h3>Backend Developer</h3>
-                        <p>En el uso de PHP, para sitios web dinámicos, además, Python en la realización de aplicaciónes de escritorios usando los motores de base de datos MariaDB y Sqlite.</p>
+                        <h3 class="text-center">Backend Developer</h3>
+                        <p class="text-center">En el uso de PHP, para sitios web dinámicos, además, Python en la realización de aplicaciónes de escritorios usando los motores de base de datos MariaDB y Sqlite.</p>
                     </div>
                     <div class="col-12 col-sm-12 col-md-4 mt-4">
-                        <h3>FullStack Web Developer</h3>
-                        <p>Full Stack Web en el desarrollo de sitios dinámicos usando PHP y MySQL, además, la utilización de Framework como Bootstrap y JQuery, también, diseños resposive, para movil first y desktop.</p>
+                        <h3 class="text-center">FullStack Web Developer</h3>
+                        <p class="text-center">Full Stack Web en el desarrollo de sitios dinámicos usando PHP y MySQL, además, la utilización de Framework como Bootstrap y JQuery, también, diseños resposive, para movil first y desktop.</p>
                     </div>
                 </div>
             </article>
         </section>
-        <!-- Optional JavaScript; choose one of the two! -->
+        <section>
+            <div class="container">
+                <h3 class="text-center my-2">Contact me</h3>
+                <div class="redes d-flex flex-column align-items-center flex-md-row justify-content-md-center">
+                    <a href=""><i class='bx bxl-facebook-square bx-md' ></i></a>
+                    <a href=""><i class='bx bxl-instagram bx-md' ></i></a>
+                    <a href=""><i class='bx bxl-telegram bx-md' ></i></a>
+                </div>
+            </div>   
+        </section>
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="js/jquery-3.5.1.js">
